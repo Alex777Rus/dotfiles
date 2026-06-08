@@ -1,4 +1,4 @@
-# dotfiles — alex@archlinux
+# dotfiles — unnxcxssvry
 
 Конфиги для Arch Linux + Hyprland + NVIDIA GTX 1080 Ti.  
 

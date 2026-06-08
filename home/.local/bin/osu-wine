@@ -1,0 +1,4 @@
+#!/bin/bash
+# osu! через wine/osu-wine
+# Замени на свою команду запуска если нужно
+exec osu-wine "$@"

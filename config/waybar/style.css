@@ -1,0 +1,61 @@
+* {
+  border: none;
+  padding: 0;
+  margin: 0;
+  min-height: 0;
+  font-family: "JetBrains Mono Nerd Font";
+  font-size: 13px;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0.6);
+    color: #aaaaaa;
+    border-bottom: 1px solid rgba(80, 0, 0, 0.6);
+}
+
+#waybar > box {
+  background: rgba(6, 4, 4, 0.98);
+  border-bottom: 0.5px solid #aa1a1a;
+  padding: 2px 0;
+}
+
+#workspaces {
+  margin: 0 6px;
+}
+
+#workspaces button {
+  color: rgba(255, 255, 255, 0.18);
+  padding: 2px 8px;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+  color: #e03030;
+  border-bottom: 2px solid #e03030;
+}
+
+#workspaces button:hover {
+  color: #e03030;
+  background: rgba(180, 20, 20, 0.12);
+}
+
+#clock {
+  color: rgba(255, 255, 255, 0.88);
+  padding: 2px 14px;
+  letter-spacing: 1px;
+}
+
+#cpu, #memory, #network, #pulseaudio, #mpris, #tray {
+  color: rgba(255, 255, 255, 0.45);
+  padding: 2px 8px;
+}
+
+#cpu:hover, #memory:hover, #network:hover, #pulseaudio:hover {
+  color: #e03030;
+  transition: color 0.2s ease;
+}
+
+#tray { padding: 2px 6px; }
+#tray > .needs-attention { color: #e03030; }

@@ -1,0 +1,13 @@
+# Бэкапы (создаются install.sh)
+*.bak
+
+# Скриншоты waybar
+config/waybar/*.png
+config/waybar/*.jpg
+
+# Личные данные (не коммитить!)
+system/fstab
+
+# OS
+.DS_Store
+Thumbs.db

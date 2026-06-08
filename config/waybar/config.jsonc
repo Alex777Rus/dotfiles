@@ -1,0 +1,113 @@
+{
+  "position": "top",
+  "height": 28,
+  "spacing": 4,
+  "reload_style_on_change": true,
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "mpris",
+    "idle_inhibitor",
+    "pulseaudio",
+    "bluetooth",
+    "network",
+    "memory",
+    "cpu",
+    "tray"
+  ],
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十"
+    },
+    "persistent-workspaces": {
+      "*": 10
+    }
+  },
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "tooltip-format": "<span>{calendar}</span>",
+    "calendar": {
+      "mode": "month",
+      "format": {
+        "today": "<span color='#cc2222'><b>{}</b></span>"
+      }
+    }
+  },
+  "cpu": {
+    "interval": 2,
+    "format": " {usage:02}%",
+    "on-click": "kitty -e btop"
+  },
+  "memory": {
+    "interval": 2,
+    "format": " {used:0.1f}G",
+    "tooltip-format": "{used}G / {total}G",
+    "on-click": "kitty -e btop"
+  },
+  "network": {
+    "format-wifi": "󰤨 {essid}",
+    "format-ethernet": "󰈀 eth",
+    "format-disconnected": "󰤮 offline",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "interval": 3,
+    "on-click": "nm-connection-editor"
+  },
+  "bluetooth": {
+    "format": "󰂯",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱 {device_alias}",
+    "tooltip-format": "{controller_alias}\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}",
+    "on-click": "blueman-manager"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " muted",
+    "on-click": "pavucontrol",
+    "on-click-right": "pamixer -t",
+    "scroll-step": 5,
+    "tooltip-format": "{volume}% — {desc}",
+    "format-icons": {
+      "default": ["", "", ""]
+    }
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "tooltip-format-activated": "Экран не гаснет",
+    "tooltip-format-deactivated": "Авто-блокировка включена",
+    "format-icons": {
+      "activated": "󰛨",
+      "deactivated": "󰛩"
+    }
+  },
+  "mpris": {
+    "format": " {dynamic}",
+    "format-paused": "󰝛 {dynamic}",
+    "dynamic-order": ["artist", "title"],
+    "dynamic-len": 30,
+    "tooltip-format": "{player}: {artist} - {title}",
+    "ignored-players": ["firefox", "brave"]
+  },
+  "tray": {
+    "icon-size": 14,
+    "spacing": 4
+  }
+}

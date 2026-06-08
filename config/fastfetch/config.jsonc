@@ -1,0 +1,27 @@
+{
+    "logo": {
+        "type": "none"
+    },
+    "display": {
+        "color": {
+            "keys": "red",
+            "title": "red"
+        },
+        "separator": " "
+    },
+    "modules": [
+        "title",
+        "separator",
+        "os",
+        "host",
+        "kernel",
+        "uptime",
+        "packages",
+        "shell",
+        "terminal",
+        "terminalfont",
+        "cpu",
+        "gpu",
+        "memory"
+    ]
+}

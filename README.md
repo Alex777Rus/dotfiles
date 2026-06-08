@@ -1,7 +1,6 @@
 # dotfiles — alex@archlinux
 
 Конфиги для Arch Linux + Hyprland + NVIDIA GTX 1080 Ti.  
-Один скрипт — полная система.
 
 ## Система
 

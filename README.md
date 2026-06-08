@@ -2,6 +2,8 @@
 
 Конфиги для Arch Linux + Hyprland + NVIDIA GTX 1080 Ti.  
 
+![Preview](https://github.com/Alex777Rus/dotfiles/blob/main/image.png)
+
 ## Система
 
 | | |
